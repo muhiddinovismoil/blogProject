@@ -18,7 +18,7 @@ export const authController = {
     login: async function (req, res, next) {
         try {
             const { email } = req.body;
-            const user = await loginUserService({ email });
+            const user = await loginUserService(email);
             res.status(200).json({
                 message: "User logged in successfully",
                 user: {
