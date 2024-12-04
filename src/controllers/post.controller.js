@@ -1,3 +1,10 @@
+import {
+    getAllPostsService,
+    getPostByIdService,
+    createPostService,
+    updatePostService,
+    deletePostService,
+} from "../services/index.js";
 export const postsController = {
     getAll: async function (req, res, next) {
         try {

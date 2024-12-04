@@ -1,3 +1,10 @@
+import {
+    getAllCommentsService,
+    getCommentByIdService,
+    createCommentService,
+    updateCommentService,
+    deleteCommentService,
+} from "../services/index.js";
 export const commentsController = {
     getAll: async function (req, res, next) {
         try {

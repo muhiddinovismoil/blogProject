@@ -1,3 +1,9 @@
+import {
+    getAllUsersService,
+    getUserByIdService,
+    updateUserService,
+    deleteUserService,
+} from "../services/index.js";
 export const usersController = {
     getAll: async function (req, res, next) {
         try {
